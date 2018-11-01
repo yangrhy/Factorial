@@ -1,1 +1,1 @@
-This is Factorial in Python w/o GUI
+This is Factorial in Python with and w/o GUI
