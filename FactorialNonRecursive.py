@@ -1,10 +1,13 @@
 from tkinter import *
 
 def Factorial(n):
+    fact = 1
     if n <= 1:
         return 1
     else:
-        return n * Factorial(n-1)
+        for i in range(1, n+1):
+            fact *= i
+        return fact
     
 def DisplayString(factString):
     n = int(factString)
@@ -15,7 +18,7 @@ def DisplayString(factString):
 
     
 master = Tk()
-master.title("Factorial (NonRecursive) Calculator")
+master.title("Factorial Calculator")
 master.geometry("300x100+0+0")
 
 Label(master, text = "N:").grid(row = 0)
